@@ -1,1 +1,154 @@
-<h1>Hello World</h1>
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+  <title>CSC 196V  Assignment 2</title>
+  <style>
+* { padding: 0; margin: 0; }
+
+body {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: #33333f;
+  width: 840px;
+  font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
+  font-size: 0.95em;
+}
+
+a, a:visited { text-decoration: none; color: #7533f4; }
+a:hover { text-decoration: underline; color: #f4b014; }
+img, a.img, a:hover.img { border: none; }
+
+img {
+  max-width: 800px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #492a7c;
+  background-color: inherit;
+  font-weight: normal;
+  padding: 0 0 5px 0;
+  margin: 15px 0 0 0;
+  border: none;
+  clear: right;
+}
+h1 { font-size: 18pt; margin:  5px 0 10px 0; line-height: 28px; }
+h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
+h3 { font-size: 13pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 11pt; }
+p { margin: 0 0 10px 0; }
+hr { border: 0px; border-top: 1px solid #ccc; height: 0px; }
+ol { margin: 1em; }
+
+.content {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+
+.article {
+  line-height: 1.5em;
+}
+
+.entry  {
+  border-top: 1px solid #ddd;
+  padding-top: 2px;
+  margin-top: 3em;
+}
+  </style>
+</head>
+
+<body>
+<div class='content'>
+
+<section>
+  <h1>Assignment 2: Exploratory Data Analysis</h1>
+
+  <p>
+    <strong>Team members: Arsal Ajaz, Gursevak Singh, Joshua Degmetich</strong>
+  </p>
+</section>
+
+<section>
+  <h2>Dataset</h2>
+
+  <p>
+    General demographic data (with a focus on joviality) of the participants.<br/>
+    We are using VAST 2022 Challenge data from participants in Engagement, Ohio. 
+  </p>
+
+  <p>
+    The data is available online at:
+    <strong>
+      <a href="https://vast-challenge.github.io/2022/index.html">VAST 2022 CHALLENGE</a>
+    </strong>
+  </p>
+</section>
+
+<section>
+  <h2>Initial Analysis Questions</h2>
+  <ol>
+    <li>Does age have any relations with jovilaity and does having kids play a role in it? </li>
+    <li>Is there any relationship between Money people spend on food, money they have avialable, and jovilaity?</li>
+        <li>Does home location play a role in people's level of happiness? Why are people living in the outskirts of the city are not as happy as the people living in the center?</li>
+    <li>Looking at the average age of those with a specfic educational background, does having kids have anything to do with it? What about their educational background and jovilality?</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Discoveries &amp; Insights</h2>
+
+  <div class="entry">
+<!-- <img src="IMAGE_FILENAME" /> -->
+<div class='tableauPlaceholder' id='viz1656135928786' style='position: relative'><noscript><a href='#'><img alt='Avg joviality vs age calculated ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;av&#47;avgjovialityvsage&#47;Avgjovialityvsagecalculated&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='avgjovialityvsage&#47;Avgjovialityvsagecalculated' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;av&#47;avgjovialityvsage&#47;Avgjovialityvsagecalculated&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1656135928786');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    	<h3 style="color:blue;text-align:center;"> Age vs average joviality trend </h3>
+    
+ <p class="caption">
+
+    This visualization shows that as the participants age, their overall level of happiness tends to decline. Having children as a factor changes things slightly, as those in their 20s seem to be happier without children. Those who are well into their adulthood (40+) seem to be thankful to have children, in comparison.
+</p> 
+  </div>
+
+  <div class="entry">
+   <div class='tableauPlaceholder' id='viz1656134449749' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;firstone_16561340447100&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='firstone_16561340447100&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;firstone_16561340447100&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1656134449749');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<!--     <img src="https://i.ibb.co/7XJqf8C/Available-balance-and-Avg-Daily-Budget-vs-joviality.png" alt="Available-balance-and-Avg-Daily-Budget-vs-joviality" border="0"> -->
+        <h3 style="color:blue;text-align:center;"> Avg Available balance and avg food budget vs joviality trend </h3>
+    <p class="caption">
+ These graph describe the relationship between Average Avaialble balance, Average food budget and jovialiy. We graphed these two dimesnion on same page to see if there is any relationship between. It show that people who have less available balance and have higher budget for food, tend to be more jovial.
+    </p>
+  </div>
+
+  <div class="entry">
+<div class='tableauPlaceholder' id='viz1656126076306' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_16560533429240&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book2_16560533429240&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_16560533429240&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1656126076306');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <p class="caption">
+    We used the participant logs table to find out where people lived and combined that with particiipants table to show thier joviality. I was a little suprised about the fact that few participants logged "AtHome" status from different locations. The overall visualization shows that the people on the edges of the town are not as happy as people living in the middle. 
+    </p>
+  </div>
+
+
+
+  <div class="entry">
+<div class='tableauPlaceholder' id='viz1656129343291' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;degmetich2&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='degmetich2&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;degmetich2&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1656129343291');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+        <h3 style="color:blue;text-align:center;">Average joviality vs educational background (with and w/o kids)</h3>
+    In this visualization, we can see that those with a graduate education are the most happy overall.  If you view the interactive and contrasting data, you can see that those with a lower education and have kids are the most happy, which is quite a surprise.  The least happy are those with no kids and a lower education.
+    </p>
+  </div>
+
+  <div class="entry">
+    <div class='tableauPlaceholder' id='viz1656130885946' style='position: relative'><noscript><a href='#'><img alt='Apartment Rents ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book5_16561308792750&#47;Sheet3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book5_16561308792750&#47;Sheet3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book5_16561308792750&#47;Sheet3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1656130885946');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <p class="caption">
+    The visualization above depicts the cost of rent depending on the area of the city. The darker shade of blue indicates higher rent while lighter is lower. We were suprised to not see a specfic pattern in the cost of rent. It seems uniform across the city.
+    </p>
+  </div>
+  <div class="entry">
+    <h3>Summary</h3>
+    <p>
+   		In this data analysis, we explored several trends in the city of Engagement, Ohio and their participants in the survey related to their overall happiness (joviality). In general it appears that those who are older are less happy, and younger people without kids are the most happy. In terms of who can buy the best food, those that are able to spend the most on a daily basis are the most happy whereas people who have more available to spend are less happy. For those with a lower education, surprisingly the ones with kids are the most happy while the lowest education without kids are the least happy. Finally, we tried to correlate rent price, living location, and joviality by creating two maps. We have found that overall it does not seem like those who pay a higher amount of rent are happier.
+    </p>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
